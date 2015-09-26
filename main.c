@@ -3,7 +3,7 @@
 int main ( void )
 {
     WDTCTL = WDTPW | WDTHOLD;       // Stop watchdog timer
-    P1DIR |= BIT3;                  // Set P1.0 to output direction
+    P1DIR |= BIT0;                  // Set P1.0 to output direction
     P1REN |= BIT3;                  // Enable pullup resistor on P1.3
     P1IE |= BIT3;                   // Enable the interrupts on P1.3
     P1IES |= BIT3;                  // Hi/Low edge on P1.3
